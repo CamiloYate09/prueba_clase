@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <title>Pagina Inicial</title>
+</head>
+
+<body>
+
+  <!-- Barra de navegación -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="Pagina.html">Pagina de Perfil</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="Pagina.html">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" onclick="soon();false">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" onclick="soon();false">Portafolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" onclick="soon();false">Clientes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" onclick="soon();false">Contacto</a>
+        </li>
+      </ul>
+      <div class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Buscar..." id="txtBuscar" aria-label="Buscar">
+        <button class="btn btn-outline-success my-2 my-sm-0" onclick="buscar();false;">Buscar</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Slide principal -->
+  <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="d-block w-100" src="images/slide/developer.png" alt="developer">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="images/slide/manos.png" alt="manos">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="images/slide/person.png" alt="persona">
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Anterior</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Siguiente</span>
+    </a>
+  </div>
+
+
+<footer class="jumbotron text-center">
+  <label>Copyrigh Breitner González</label>
+</footer>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="js/bootstrap.js"></script>
+
+  <script>
+    function soon()
+    {
+      alert("Muy pronto!");
+    }
+
+    function buscar(texto)
+    {
+      var texto = document.getElementById("txtBuscar").value;
+
+      debugger;
+
+      alert("Proximamente implementaremos el buscador de : " + texto);
+    }
+  </script>
+
+</body>
+
+</html>
